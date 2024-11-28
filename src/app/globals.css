@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Tungsten';
+  src: url('/Tungsten-Bold_Web.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-tungsten {
+  font-family: 'Tungsten', Impact, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body {
+    scroll-behavior: smooth;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a1128;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00b4d8;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0077b6;
+}
+
+@keyframes hextech-border-anim {
+  0%,
+  100% {
+    box-shadow: 0 0 10px #00b4d8, inset 0 0 10px #00b4d8;
+    border: 2px solid #00b4d8;
+    background-color: #0a1128;
+  }
+  25%,
+  75% {
+    box-shadow: 0 0 20px #30588c, inset 0 0 15px #30588c;
+    border: 2px solid #30588c;
+    background-color: #0f1c2e;
+  }
+  50% {
+    box-shadow: 0 0 25px #a63f50, inset 0 0 10px #a63f50;
+    border: 2px solid #a63f50;
+    background-color: #301116;
+  }
+}
+
+.hextech-border-anim {
+  animation: hextech-border-anim 10s ease-in-out infinite 2s;
+}
+
+.bg-arcane-dark {
+  background-color: #0a1128;
+}
+.text-arcane-light {
+  color: #00b4d8;
+}
+.bg-arcane-accent {
+  background-color: #0077b6;
+}
+.bg-arcane-gradient {
+  background: linear-gradient(135deg, #0a1128 0%, #001845 100%);
+}
+
+.border-arcane-light {
+  border: 1px solid #00b4d8;
+}
+.hextech-border {
+  border: 2px solid #00b4d8;
+  box-shadow: 0 0 10px #00b4d8, inset 0 0 10px #00b4d8;
+}
+.hextech-border-sm {
+  border: 1px solid #00b4d8;
+  box-shadow: 0 0 5px rgba(0, 180, 216, 0.2),
+    inset 0 0 5px rgba(0, 180, 216, 0.2);
+}
+.hextech-border-sm-hover {
+  border: 1px solid #00b4d8;
+  box-shadow: 0 0 10px rgba(0, 180, 216, 0.4),
+    inset 0 0 10px rgba(0, 180, 216, 0.4);
+}
+.hextech-border-t {
+  border-top: 1px solid #00b4d8;
+  box-shadow: 0 -5px 10px rgba(0, 180, 216, 0.2);
+}
+.hextech-border-active {
+  border: 1px solid #00b4d8;
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.4),
+    inset 0 0 20px rgba(0, 180, 216, 0.4);
+}
+.glow {
+  text-shadow: 0 0 2px #00b4d8, 0 0 4px #00b4d8, 0 0 8px #00b4d8;
+}
+.text-arcane-glow {
+  text-shadow: 0 0 10px rgba(0, 180, 216, 0.8);
+}
+.hextech-text-glow {
+  text-shadow: 0 0 10px rgba(0, 180, 216, 0.4);
+}
+
+.hextech-button {
+  background: linear-gradient(45deg, #0077b6, #00b4d8);
+  border: 2px solid #48cae4;
+  box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+  transition: all 0.3s ease;
+}
+
+.hextech-button:hover {
+  background: linear-gradient(45deg, #00b4d8, #0077b6);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.8);
+}
+
+.arcane-card {
+  background: rgba(10, 17, 40, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 180, 216, 0.2);
+  box-shadow: 0 0 20px rgba(0, 180, 216, 0.1);
+}
