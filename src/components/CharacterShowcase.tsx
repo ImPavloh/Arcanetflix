@@ -43,7 +43,7 @@ const characters: Character[] = [
   },
   {
     id: 'heimerdinger',
-    name: 'HEIMERDINGER',
+    name: 'HEIMER',
     description:
       'Heimerdinger ya advirtió al Consejo de Piltover sobre los peligros de usar la magia sin precaución. Tras aprender de sus errores con Jayce, Heimerdinger anima a Ekko a seguir buscando una solución y trabaja con él para solucionar el problema en lugar de limitarse a ofrecerle consejo.',
     thumbnail: '/characters/5.png',
@@ -144,7 +144,7 @@ export function CharacterShowcase() {
                     fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute bottom-1 left-0 right-0 text-center text-xs font-medium">
+                  <div className="absolute bottom-1 left-0 right-0 text-center text-xs font-medium ">
                     {character.name}
                   </div>
                 </motion.button>
@@ -178,7 +178,7 @@ export function CharacterShowcase() {
                   animate={{ opacity: 1, y: 0 }}
                   className="space-y-4"
                 >
-                  <h3 className="text-4xl md:text-5xl text-arcane-light glow font-tungsten">
+                  <h3 className="text-4xl md:text-5xl text-cyan-200 glow inline-block font-tungsten">
                     {characters[currentCharacter].name}
                   </h3>
                   <p className="text-base md:text-lg leading-relaxed text-gray-300">

@@ -101,8 +101,7 @@ export function HeroSection() {
             src="/jinxbg.jpg"
             alt="Jinx background"
             layout="fill"
-            objectFit="cover"
-            className="opacity-70"
+            className="opacity-70 object-cover"
             priority
           />
         ) : (
@@ -121,7 +120,6 @@ export function HeroSection() {
             />
           </video>
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-arcane-dark via-arcane-dark/70 to-transparent" />
       </div>
 
       <AnimatePresence>
@@ -274,7 +272,7 @@ export function HeroSection() {
         </div>
       </div>
 
-      <ScrollLink to="characters" smooth={true} duration={100} offset={-60}>
+      <ScrollLink to="characters" smooth={true} duration={300} offset={-60}>
         <motion.div
           className="hidden md:block absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
           initial={{ opacity: 0, y: -20 }}

@@ -44,6 +44,7 @@ function ScrollIndicatorItem({
   isActive,
 }: ScrollIndicatorItemProps) {
   const controls = useAnimation()
+  const [isHovered, setIsHovered] = useState(false)
 
   useEffect(() => {
     controls.start(isActive ? 'active' : 'inactive')
@@ -72,17 +73,22 @@ function ScrollIndicatorItem({
         )}
         aria-label={`Navigate to ${section.label} section`}
         aria-current={isActive ? 'true' : undefined}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       >
         <div className="flex items-center justify-end relative">
           <motion.span
             className={cn(
+              'bg-slate-900/80 backdrop-blur-md',
+              'rounded-l-full py-2 px-4 hextech-border',
+              'border border-cyan-500/30',
+              'shadow-[0_0_15px_rgba(34,211,238,0.15)]',
               'absolute right-full mr-4 text-sm font-medium',
-              'text-cyan-300 opacity-0 group-hover:opacity-100',
+              'text-cyan-300/80',
               'pointer-events-none select-none',
-              'drop-shadow-[0_0_10px_rgba(34,211,238,0.5)]',
             )}
-            initial={{ x: 10, opacity: 0 }}
-            whileHover={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: isHovered ? 1 : 0 }}
             transition={{ duration: 0.2 }}
           >
             {section.label}
@@ -167,8 +173,8 @@ function ScrollIndicatorItem({
               }}
             >
               <Image
-                src="/hextech/hextech_stone2.png"
-                alt=""
+                src={`/hextech/hextech_stone${Math.floor(Math.random() * 3) + 1}.png`}
+                alt="Hextech stone"
                 width={48}
                 height={48}
                 className={cn(
@@ -178,6 +184,7 @@ function ScrollIndicatorItem({
                   isActive && 'drop-shadow-[0_0_12px_rgba(34,211,238,0.8)]',
                 )}
                 priority={index === 0}
+                onError={(e) => (e.currentTarget.src = '/hextech/hextech_stone1.png')}
               />
             </motion.div>
           </div>

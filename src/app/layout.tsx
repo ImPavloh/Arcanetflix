@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     siteName: 'Arcane Fan Website',
     images: [
       {
-        url: 'https://arcanetflix.vercel.app/og-image.jpg',
+        url: 'https://arcanetflix.vercel.app/jinxbg.jpg',
         width: 1200,
         height: 630,
         alt: 'Arcane: League of Legends',
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     description:
       'Explora el mundo de Arcane, la serie de animación ambientada en el universo de League of Legends.',
     creator: '@impavloh',
-    images: ['https://arcanetflix.vercel.app/twitter-image.jpg'],
+    images: ['https://arcanetflix.vercel.app/jinxbg.jpg'],
   },
   robots: {
     index: true,

@@ -197,6 +197,7 @@ export function MusicPlayer({
         >
           {isMounted && (
             <iframe
+              title="Reproductor Spotify"
               ref={iframeRef}
               src={`${embedUrl}?utm_source=generator&theme=0`}
               width="100%"

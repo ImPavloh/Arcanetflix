@@ -141,6 +141,7 @@ export function SpoilerWarning() {
                 <Button
                   onClick={handleAccept}
                   className="flex-1 hextech-button text-white py-4 sm:py-5 text-lg sm:text-xl font-medium transition-all duration-300 ease-in-out transform rounded-md"
+                  aria-label="Mostrar contenido"
                 >
                   <motion.span
                     initial={{ opacity: 0, y: 10 }}

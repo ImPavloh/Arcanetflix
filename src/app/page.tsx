@@ -48,7 +48,9 @@ export default function ArcanePage() {
   return (
     <div className="min-h-screen text-white overflow-x-hidden bg-arcane-dark">
       <SpoilerWarning />
-      <HeroSection />
+      <section id="hero">
+        <HeroSection />
+      </section>
 
       <main className="relative z-10 container mx-auto px-4 py-8">
         <MusicPlayer
@@ -57,36 +59,24 @@ export default function ArcanePage() {
         />
 
         <section id="characters" className="my-16">
-          <h2 className="text-3xl font-bold mb-8 text-arcane-light">
-            Characters
-          </h2>
           <Suspense fallback={<LoadingSpinner />}>
             <CharacterShowcase />
           </Suspense>
         </section>
 
         <section id="clips" className="my-16">
-          <h2 className="text-3xl font-bold mb-8 text-arcane-light">
-            Video Clips
-          </h2>
           <Suspense fallback={<LoadingSpinner />}>
             <VideoCarousel onVideoPlayingChange={handleMediaPlayingChange} />
           </Suspense>
         </section>
 
         <section id="merch" className="my-16">
-          <h2 className="text-3xl font-bold mb-8 text-arcane-light">
-            Merchandise
-          </h2>
           <Suspense fallback={<LoadingSpinner />}>
             <Merchandise />
           </Suspense>
         </section>
 
         <section id="gallery" className="my-16">
-          <h2 className="text-3xl font-bold mb-8 text-arcane-light">
-            Image Gallery
-          </h2>
           <Suspense fallback={<LoadingSpinner />}>
             <ImageGallery onImageViewChange={handleMediaPlayingChange} />
           </Suspense>

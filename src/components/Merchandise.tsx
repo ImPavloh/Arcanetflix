@@ -117,7 +117,7 @@ export function Merchandise() {
   return (
     <section
       ref={ref}
-      className="relative w-full py-8 sm:py-12 md:py-16 lg:py-24 overflow-hidden"
+      className="relative w-full py-8 sm:py-12 md:py-16 overflow-hidden"
     >
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -134,7 +134,7 @@ export function Merchandise() {
           className="text-center mb-8 sm:mb-12"
         >
           <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 text-[#00B4D8]">
-            Productos y Colaboraciones
+            Productos y colaboraciones
           </h2>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-white font-tungsten">
             MERCANCÍA OFICIAL DE ARCANE
@@ -168,8 +168,7 @@ export function Merchandise() {
                   src={product.image}
                   alt={product.name}
                   quality={80}
-                  objectFit="cover"
-                  className="transition-transform duration-500 group-hover:scale-110"
+                  className="transition-transform duration-500 group-hover:scale-110 object-cover"
                   fill
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
