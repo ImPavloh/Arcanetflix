@@ -180,7 +180,7 @@ export function Footer() {
             © {currentYear} Riot Games, Inc. Todos los derechos reservados. Esta
             es una fan page de Arcane creada por{' '}
             <a
-              href="https://github.com/impavloh"
+              href="https://pavloh.com/"
               className="text-[#C8AA6E] hover:underline focus:outline-none focus:ring-2 focus:ring-[#C8AA6E] rounded px-1"
               target="_blank"
               rel="noopener noreferrer"

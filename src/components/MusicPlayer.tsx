@@ -122,7 +122,7 @@ export function MusicPlayer({
         <div className="flex items-center justify-between px-4 h-20">
           <div className="flex items-center space-x-3">
             <Image
-              src="/playlist.jpg"
+              src="/playlist.webp"
               width={48}
               height={48}
               alt="Arcane Official Playlist"

@@ -27,6 +27,8 @@ export const metadata: Metadata = {
     'LoL',
     'Animación',
     'Serie',
+    'Pavloh',
+    'ImPavloh',
     'Vi',
     'Jinx',
     'Ekko',
@@ -42,7 +44,6 @@ export const metadata: Metadata = {
     'Piltover',
     'Zaun',
     'TimeBomb',
-    'Pavloh',
   ],
   authors: [{ name: 'Pavloh' }],
   creator: 'Pavloh',
@@ -91,7 +92,7 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    apple: '/favicon-16x16.png',
   },
   manifest: '/site.webmanifest',
   alternates: {

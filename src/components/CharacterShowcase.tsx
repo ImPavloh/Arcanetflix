@@ -18,77 +18,77 @@ const characters: Character[] = [
     name: 'JINX',
     description:
       'Jinx tenía el alma dividida en dos identidades: la fuerte y poderosa hija que crió el mismísimo Silco, y la temerosa y debilucha hermana pequeña de Vi. Ahora, tras aceptar el monstruo que Vi ha creado, Jinx se ha convertido en un receptáculo vacío, la chica maldita que echa todo a perder.',
-    thumbnail: '/characters/1.png',
+    thumbnail: '/characters/1.webp',
   },
   {
     id: 'vi',
     name: 'VI',
     description:
       'Tras aceptar que Powder ya no existe, Vi asume lo que debe hacer: encargarse del monstruo que ha creado, es decir, Jinx. A sabiendas de lo peligrosa que puede llegar a ser su hermana, Vi se alía con Caitlyn y accede a portar la insignia de agente.',
-    thumbnail: '/characters/2.png',
+    thumbnail: '/characters/2.webp',
   },
   {
     id: 'caitlyn',
     name: 'CAITLYN',
     description:
       'Caitlyn es una agente de Piltover. Otrora, hizo uso de su pericia y dotes detectivescas para exponer la corrupción en Zaun y Piltover, pero, tras el ataque de Jinx al Consejo, ha abandonado toda esperanza de conseguir la paz.',
-    thumbnail: '/characters/3.png',
+    thumbnail: '/characters/3.webp',
   },
   {
     id: 'ekko',
     name: 'EKKO',
     description:
       'Ekko da vida a los Firelights, un grupo de zaunitas que han construido un nuevo hogar que juran proteger. Para su sorpresa, ha encontrado un buen amigo en Heimerdinger, y ambos luchan por hacer de Zaun un lugar mejor.',
-    thumbnail: '/characters/4.png',
+    thumbnail: '/characters/4.webp',
   },
   {
     id: 'heimerdinger',
     name: 'HEIMER',
     description:
       'Heimerdinger ya advirtió al Consejo de Piltover sobre los peligros de usar la magia sin precaución. Tras aprender de sus errores con Jayce, Heimerdinger anima a Ekko a seguir buscando una solución y trabaja con él para solucionar el problema en lugar de limitarse a ofrecerle consejo.',
-    thumbnail: '/characters/5.png',
+    thumbnail: '/characters/5.webp',
   },
   {
     id: 'ambessa',
     name: 'AMBESSA',
     description:
       'Ambessa, guerrera noxiana y madre de Mel, jura proteger el legado de su familia..., aunque eso signifique ir en contra de los deseos de su hija.',
-    thumbnail: '/characters/6.png',
+    thumbnail: '/characters/6.webp',
   },
   {
     id: 'jayce',
     name: 'JAYCE',
     description:
       'Tras una serie de acontecimientos, Jayce empieza a cuestionar el uso de la tecnología hextech para mejorar las vidas de los piltovanos. Mientras tanto, descubre con la ayuda de Heimerdinger y Ekko que el empleo de esta tecnología ha emponzoñado la Ciudad Subterránea. Su investigación continúa, hasta que se topan con algo más...',
-    thumbnail: '/characters/7.jpg',
+    thumbnail: '/characters/7.webp',
   },
   {
     id: 'mel',
     name: 'MEL',
     description:
       'La prudente inversión de Mel en la tecnología hextech ha transformado Piltover en uno de los mayores focos comerciales de toda Runaterra, y a ella en una de las personas más influyentes de la ciudad. Tras el ataque de Jinx, Mel planta cara a su madre y al consejero Salo para proteger el sueño de Jayce.',
-    thumbnail: '/characters/8.jpg',
+    thumbnail: '/characters/8.webp',
   },
   {
     id: 'sevika',
     name: 'SEVIKA',
     description:
       'Sevika ha vivido a la sombra de Piltover toda su vida. Mientras los barones químicos se declaran la guerra unos a otros para hacerse con el trono de Zaun, que ha quedado vacío tras la muerte de Silco, Sevika no pierde de vista al verdadero enemigo: los de arriba.',
-    thumbnail: '/characters/9.jpg',
+    thumbnail: '/characters/9.webp',
   },
   {
     id: 'viktor',
     name: 'VIKTOR',
     description:
       'Pese a las advertencias sobre sus peligros, Viktor sobrepasa los límites de la tecnología hextech. Guiado por la culpa, se embarca en una cruzada por cumplir su sueño: poner la tecnología hextech al alcance de todos.',
-    thumbnail: '/characters/10.jpg',
+    thumbnail: '/characters/10.webp',
   },
   {
     id: 'warwick',
     name: 'WARWICK',
     description:
       'Warwick es una bestia creada por Singed cuya furia primitiva se debate con los retazos de humanidad que aún alberga en su interior. ¿Quedará algo de Vander después de tanto sufrimiento?',
-    thumbnail: '/characters/11.jpg',
+    thumbnail: '/characters/11.webp',
   },
 ]
 

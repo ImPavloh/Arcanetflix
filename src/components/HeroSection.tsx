@@ -98,7 +98,7 @@ export function HeroSection() {
       <div className="absolute inset-0">
         {isVideoHidden ? (
           <Image
-            src="/jinxbg.jpg"
+            src="/jinxbg.webp"
             alt="Jinx background"
             layout="fill"
             className="opacity-70 object-cover"
@@ -195,7 +195,7 @@ export function HeroSection() {
               className="mb-6"
             >
               <Image
-                src="/arcane.png"
+                src="/arcane.webp"
                 alt="Arcane logo"
                 width={500}
                 height={125}

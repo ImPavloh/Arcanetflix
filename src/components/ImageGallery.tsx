@@ -17,81 +17,81 @@ type GalleryImage = {
 const galleryImages: GalleryImage[] = [
   {
     id: '1',
-    image: '/gallery/1.png',
+    image: '/gallery/1.webp',
     alt: 'Smeech',
     aspectRatio: 16 / 9,
   },
   {
     id: '2',
-    image: '/gallery/2.png',
+    image: '/gallery/2.webp',
     alt: 'Viktor, Ekko y Heimer dentro del Hexcore',
     aspectRatio: 4 / 3,
   },
-  { id: '3', image: '/gallery/3.png', alt: 'Jinx', aspectRatio: 1 },
+  { id: '3', image: '/gallery/3.webp', alt: 'Jinx', aspectRatio: 1 },
   {
     id: '4',
-    image: '/gallery/4.png',
+    image: '/gallery/4.webp',
     alt: 'Violet',
     aspectRatio: 3 / 2,
   },
   {
     id: '5',
-    image: '/gallery/5.png',
+    image: '/gallery/5.webp',
     alt: 'Equipo de asalto de Caitlyn',
     aspectRatio: 16 / 9,
   },
   {
     id: '6',
-    image: '/gallery/6.png',
+    image: '/gallery/6.webp',
     alt: 'Jayce',
     aspectRatio: 1,
   },
-  { id: '7', image: '/gallery/7.png', alt: 'Jinx', aspectRatio: 1 },
+  { id: '7', image: '/gallery/7.webp', alt: 'Jinx', aspectRatio: 1 },
   {
     id: '8',
-    image: '/gallery/8.png',
+    image: '/gallery/8.webp',
     alt: 'Jinx vs Warwick Vander',
     aspectRatio: 1,
   },
   {
     id: '9',
-    image: '/gallery/9.png',
+    image: '/gallery/9.webp',
     alt: 'Ambessa y Caitlyn',
     aspectRatio: 16 / 9,
   },
   {
     id: '10',
-    image: '/gallery/10.png',
+    image: '/gallery/10.webp',
     alt: 'Viktor',
     aspectRatio: 4 / 3,
   },
   {
     id: '11',
-    image: '/gallery/11.jpg',
+    image: '/gallery/11.webp',
     alt: 'Ambessa',
     aspectRatio: 1,
   },
   {
     id: '12',
-    image: '/gallery/12.jpg',
+    image: '/gallery/12.webp',
     alt: 'Violet vs Warwick Vander',
     aspectRatio: 3 / 2,
   },
   {
     id: '13',
-    image: '/gallery/13.jpg',
+    image: '/gallery/13.webp',
     alt: 'Viktor',
     aspectRatio: 16 / 9,
   },
   {
     id: '14',
-    image: '/gallery/14.jpg',
+    image: '/gallery/14.webp',
     alt: 'Jinx',
     aspectRatio: 4 / 3,
   },
   {
     id: '15',
-    image: '/gallery/15.jpg',
+    image: '/gallery/15.webp',
     alt: 'Vi',
     aspectRatio: 1,
   },
@@ -240,7 +240,7 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
                       size="icon"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                       onClick={handleZoomIn}
-                      aria-label="Zoom in"
+                      aria-label="Hacer zoom"
                     >
                       <ZoomIn className="w-4 h-4 md:w-5 md:h-5 text-arcane-light" />
                     </Button>
@@ -249,7 +249,7 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
                       size="icon"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                       onClick={handleZoomOut}
-                      aria-label="Zoom out"
+                      aria-label="Quitar zoom"
                     >
                       <ZoomOut className="w-4 h-4 md:w-5 md:h-5 text-arcane-light" />
                     </Button>
@@ -258,7 +258,7 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
                       size="icon"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                       onClick={prevImage}
-                      aria-label="Previous image"
+                      aria-label="Imagen anterior"
                     >
                       <ChevronLeft className="w-4 h-4 md:w-5 md:h-5 text-arcane-light" />
                     </Button>
@@ -267,7 +267,7 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
                       size="icon"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                       onClick={nextImage}
-                      aria-label="Next image"
+                      aria-label="Siguiente imagen"
                     >
                       <ChevronRight className="w-4 h-4 md:w-5 md:h-5 text-arcane-light" />
                     </Button>
@@ -276,7 +276,7 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
                       size="icon"
                       className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                       onClick={closeLightbox}
-                      aria-label="Close lightbox"
+                      aria-label="Cerrar lightbox"
                     >
                       <X className="w-4 h-4 md:w-5 md:h-5 text-arcane-light" />
                     </Button>

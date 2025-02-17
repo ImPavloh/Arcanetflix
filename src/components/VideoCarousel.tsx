@@ -18,37 +18,37 @@ const videos: Video[] = [
   {
     id: 1,
     title: 'THE LINE | VIDEOCLIP',
-    thumbnail: '/thumbnails/1.jpg',
+    thumbnail: '/thumbnails/1.webp',
     videoSrc: 'https://www.youtube.com/embed/E2Rj2gQAyPA',
   },
   {
     id: 2,
     title: 'PAINT THE TOWN BLUE',
-    thumbnail: '/thumbnails/2.png',
+    thumbnail: '/thumbnails/2.webp',
     videoSrc: 'https://www.youtube.com/embed/pl2K9rvsS74',
   },
   {
     id: 3,
     title: 'COME PLAY',
-    thumbnail: '/thumbnails/3.jpg',
+    thumbnail: '/thumbnails/3.webp',
     videoSrc: 'https://www.youtube.com/embed/3jf6xOg6e7Y',
   },
   {
     id: 4,
     title: 'ARCANE: TEMPORADA 2 | TRÁILER OFICIAL',
-    thumbnail: '/thumbnails/4.jpg',
+    thumbnail: '/thumbnails/4.webp',
     videoSrc: 'https://www.youtube.com/embed/hsffPST-x1k',
   },
   {
     id: 5,
     title: 'ARCANE: TRÁILER "COME PLAY"',
-    thumbnail: '/thumbnails/5.jpg',
+    thumbnail: '/thumbnails/5.webp',
     videoSrc: 'https://www.youtube.com/embed/5Hy6M3Lk08c',
   },
   {
     id: 6,
     title: 'AVANCE DE ARCANE EN LOS JUEGOS: COME PLAY',
-    thumbnail: '/thumbnails/6.jpg',
+    thumbnail: '/thumbnails/6.webp',
     videoSrc: 'https://www.youtube.com/embed/rR5vyzjGwmk',
   },
 ]
@@ -251,7 +251,7 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
                   size="icon"
                   className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-arcane-light/20 hover:bg-arcane-light/30 transition-colors backdrop-blur-sm"
                   onClick={() => openModal(videos[currentIndex])}
-                  aria-label={`Play ${videos[currentIndex].title}`}
+                  aria-label={`Reproducir ${videos[currentIndex].title}`}
                 >
                   <Play className="w-6 h-6 sm:w-8 sm:h-8 text-arcane-light" />
                 </Button>
@@ -261,7 +261,7 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
                 size="icon"
                 className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-black/50 hover:bg-arcane-light/20 backdrop-blur-sm transition-colors"
                 onClick={next}
-                aria-label="Next video"
+                aria-label="Siguiente vídeo"
               >
                 <Image
                   src="/svg/arrow-right.svg"
@@ -309,7 +309,7 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
                   size="icon"
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                   onClick={() => window.open(selectedVideo.videoSrc, '_blank')}
-                  aria-label="Open video in new tab"
+                  aria-label="Abrir vídeo en una ventana nueva"
                 >
                   <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 text-arcane-light" />
                 </Button>
@@ -318,7 +318,7 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
                   size="icon"
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
                   onClick={closeModal}
-                  aria-label="Close modal"
+                  aria-label="Cerrar modal"
                 >
                   <X className="w-4 h-4 sm:w-5 sm:h-5 text-arcane-light" />
                 </Button>

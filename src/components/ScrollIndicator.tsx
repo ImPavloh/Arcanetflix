@@ -71,7 +71,7 @@ function ScrollIndicatorItem({
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-500/50 rounded-full',
           'transition-transform hover:scale-105',
         )}
-        aria-label={`Navigate to ${section.label} section`}
+        aria-label={`Navegar a la sección ${section.label}`}
         aria-current={isActive ? 'true' : undefined}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
@@ -287,7 +287,7 @@ export function ScrollIndicators() {
               stiffness: 100,
               damping: 15,
             }}
-            aria-label="Page navigation"
+            aria-label="Navegación de página"
           >
             <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-px h-6 bg-gradient-to-b from-transparent via-cyan-400/50 to-cyan-400/80" />
 
@@ -333,8 +333,8 @@ export function ScrollIndicators() {
               )}
               aria-label={
                 isIndicatorVisible
-                  ? 'Hide scroll indicator'
-                  : 'Show scroll indicator'
+                  ? 'Ocultar indicador de scroll'
+                  : 'Mostrar indicador de scroll'
               }
             >
               <motion.div
