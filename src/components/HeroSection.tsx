@@ -100,7 +100,7 @@ export function HeroSection() {
           <Image
             src="/jinxbg.webp"
             alt="Jinx background"
-            layout="fill"
+            fill
             className="opacity-70 object-cover"
             priority
           />

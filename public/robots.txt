@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.arcanetflix.vercel.app/sitemap.xml
+Sitemap: https://www.arcanetflix.pavloh.com/sitemap.xml

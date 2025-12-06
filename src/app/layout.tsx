@@ -57,11 +57,11 @@ export const metadata: Metadata = {
     title: 'Arcane: League of Legends',
     description:
       'Explora el mundo de Arcane, la serie de animación ambientada en el universo de League of Legends.',
-    url: 'https://arcanetflix.vercel.app',
+    url: 'https://arcanetflix.pavloh.com',
     siteName: 'Arcane Fan Website',
     images: [
       {
-        url: 'https://arcanetflix.vercel.app/jinxbg.jpg',
+        url: 'https://arcanetflix.pavloh.com/jinxbg.jpg',
         width: 1200,
         height: 630,
         alt: 'Arcane: League of Legends',
@@ -76,7 +76,7 @@ export const metadata: Metadata = {
     description:
       'Explora el mundo de Arcane, la serie de animación ambientada en el universo de League of Legends.',
     creator: '@impavloh',
-    images: ['https://arcanetflix.vercel.app/jinxbg.jpg'],
+    images: ['https://arcanetflix.pavloh.com/jinxbg.jpg'],
   },
   robots: {
     index: true,
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   alternates: {
-    canonical: 'https://arcanetflix.vercel.app',
+    canonical: 'https://arcanetflix.pavloh.com',
   },
 }
 

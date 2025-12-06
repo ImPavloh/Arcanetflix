@@ -2,7 +2,7 @@
   "name": "arcane",
   "description": "Explora el mundo de Arcane, la serie de animación ambientada en el universo de League of Legends.",
   "license": "MIT",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -20,7 +20,7 @@
     "framer-motion": "^11.11.17",
     "lodash": "^4.17.21",
     "lucide-react": "^0.461.0",
-    "next": "15.2.3",
+    "next": "15.5.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",

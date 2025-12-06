@@ -123,23 +123,23 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
   }, [onImageViewChange])
 
   const nextImage = useCallback(() => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length)
-    setSelectedImage(galleryImages[(currentIndex + 1) % galleryImages.length])
+    setCurrentIndex((prevIndex) => {
+      const nextIdx = (prevIndex + 1) % galleryImages.length
+      setSelectedImage(galleryImages[nextIdx])
+      return nextIdx
+    })
     setZoom(1)
-  }, [currentIndex])
+  }, [])
 
   const prevImage = useCallback(() => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + galleryImages.length) % galleryImages.length,
-    )
-    setSelectedImage(
-      galleryImages[
-        (currentIndex - 1 + galleryImages.length) % galleryImages.length
-      ],
-    )
+    setCurrentIndex((prevIndex) => {
+      const prevIdx =
+        (prevIndex - 1 + galleryImages.length) % galleryImages.length
+      setSelectedImage(galleryImages[prevIdx])
+      return prevIdx
+    })
     setZoom(1)
-  }, [currentIndex])
+  }, [])
 
   const handleZoomIn = useCallback(() => {
     setZoom((prevZoom) => Math.min(prevZoom + 0.1, 3))
