@@ -4,10 +4,9 @@ import { useEffect, useState, useCallback, useRef } from 'react'
 import Image from 'next/image'
 import { Link as ScrollLink, Events } from 'react-scroll'
 import { motion, AnimatePresence, useAnimation } from 'framer-motion'
-import { throttle } from 'lodash'
 import { ChevronRight, CircleX } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+import { cn, throttle } from '@/lib/utils'
 
 interface ScrollIndicatorItemProps {
   section: {
