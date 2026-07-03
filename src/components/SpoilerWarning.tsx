@@ -12,9 +12,12 @@ export function SpoilerWarning() {
   const [dontShowAgain, setDontShowAgain] = useState(false)
 
   useEffect(() => {
-    const spoilerAccepted = localStorage.getItem('spoilerWarningAccepted')
-    if (spoilerAccepted) {
-      setIsVisible(false)
+    try {
+      if (localStorage.getItem('spoilerWarningAccepted')) {
+        setIsVisible(false)
+      }
+    } catch {
+      // localStorage no disponible (modo privado, cookies bloqueadas)
     }
   }, [])
 
@@ -23,7 +26,11 @@ export function SpoilerWarning() {
     setTimeout(() => {
       setIsVisible(false)
       if (dontShowAgain) {
-        localStorage.setItem('spoilerWarningAccepted', 'true')
+        try {
+          localStorage.setItem('spoilerWarningAccepted', 'true')
+        } catch {
+          // localStorage no disponible, se mostrará de nuevo la próxima vez
+        }
       }
     }, 500)
   }

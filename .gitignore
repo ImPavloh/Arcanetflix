@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-pnpm-lock.yaml
+package-lock.json
 .pnp.*
 .yarn/*
 !.yarn/patches

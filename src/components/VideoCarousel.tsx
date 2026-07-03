@@ -119,11 +119,11 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
   }, [isModalOpen])
 
   useEffect(() => {
-    if (inView) {
+    if (inView && !isModalOpen) {
       const timer = setInterval(next, 5000)
       return () => clearInterval(timer)
     }
-  }, [inView, next])
+  }, [inView, isModalOpen, next])
 
   const memoizedCarouselContent = useMemo(
     () => (
@@ -144,6 +144,7 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
                 src={video.thumbnail}
                 alt={video.title}
                 fill
+                sizes="(max-width: 640px) 100vw, 80vw"
                 className="object-cover"
                 priority={index === 0}
                 loading={index === 0 ? 'eager' : 'lazy'}
@@ -182,6 +183,7 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
               src={video.thumbnail}
               alt={video.title}
               fill
+              sizes="(max-width: 640px) 96px, 160px"
               className="object-cover transition-transform duration-300 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -308,7 +310,13 @@ export function VideoCarousel({ onVideoPlayingChange }: VideoCarouselProps) {
                   variant="ghost"
                   size="icon"
                   className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-black/50 backdrop-blur-sm hover:bg-arcane-light/20"
-                  onClick={() => window.open(selectedVideo.videoSrc, '_blank')}
+                  onClick={() =>
+                    window.open(
+                      selectedVideo.videoSrc.replace('/embed/', '/watch?v='),
+                      '_blank',
+                      'noopener,noreferrer',
+                    )
+                  }
                   aria-label="Abrir vídeo en una ventana nueva"
                 >
                   <ExternalLink className="w-4 h-4 sm:w-5 sm:h-5 text-arcane-light" />

@@ -161,6 +161,25 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
     }
   }, [onImageViewChange])
 
+  useEffect(() => {
+    if (!selectedImage) return
+
+    document.body.style.overflow = 'hidden'
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeLightbox()
+      else if (e.key === 'ArrowLeft') prevImage()
+      else if (e.key === 'ArrowRight') nextImage()
+    }
+
+    window.addEventListener('keydown', handleKeyDown)
+
+    return () => {
+      document.body.style.overflow = ''
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [selectedImage, closeLightbox, prevImage, nextImage])
+
   return (
     <div className="relative w-full min-h-screen text-white py-6 md:py-12 overflow-hidden">
       <div className="container mx-auto px-4 relative z-10">
@@ -213,6 +232,9 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
               exit={{ opacity: 0 }}
               className="fixed inset-0 z-50 bg-black/95 backdrop-blur-xl"
               tabIndex={-1}
+              role="dialog"
+              aria-modal="true"
+              aria-label={selectedImage.alt}
               {...handlers}
             >
               <div className="absolute inset-0 flex items-center justify-center p-4">
@@ -227,6 +249,7 @@ export function ImageGallery({ onImageViewChange }: ImageGalleryProps) {
                       src={selectedImage.image}
                       alt={selectedImage.alt}
                       quality={80}
+                      sizes="(max-width: 1152px) 100vw, 1152px"
                       className="object-contain transition-transform duration-300"
                       style={{ transform: `scale(${zoom})` }}
                       priority

@@ -168,6 +168,7 @@ export function Merchandise() {
                   src={product.image}
                   alt={product.name}
                   quality={80}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                   className="transition-transform duration-500 group-hover:scale-110 object-cover"
                   fill
                 />

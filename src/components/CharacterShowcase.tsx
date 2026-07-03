@@ -139,8 +139,9 @@ export function CharacterShowcase() {
                     src={character.thumbnail}
                     alt={character.name}
                     quality={75}
+                    sizes="80px"
                     className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    priority
+                    loading="lazy"
                     fill
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
@@ -168,6 +169,7 @@ export function CharacterShowcase() {
                     src={characters[currentCharacter].thumbnail}
                     alt={characters[currentCharacter].name}
                     className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     priority
                     fill
                   />

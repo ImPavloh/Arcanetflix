@@ -45,6 +45,7 @@ export const metadata: Metadata = {
     'Zaun',
     'TimeBomb',
   ],
+  metadataBase: new URL('https://arcanetflix.pavloh.com'),
   authors: [{ name: 'Pavloh' }],
   creator: 'Pavloh',
   publisher: 'Riot Games',
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
     siteName: 'Arcane Fan Website',
     images: [
       {
-        url: 'https://arcanetflix.pavloh.com/jinxbg.jpg',
+        url: 'https://arcanetflix.pavloh.com/jinxbg.webp',
         width: 1200,
         height: 630,
         alt: 'Arcane: League of Legends',
@@ -76,7 +77,7 @@ export const metadata: Metadata = {
     description:
       'Explora el mundo de Arcane, la serie de animación ambientada en el universo de League of Legends.',
     creator: '@impavloh',
-    images: ['https://arcanetflix.pavloh.com/jinxbg.jpg'],
+    images: ['https://arcanetflix.pavloh.com/jinxbg.webp'],
   },
   robots: {
     index: true,
@@ -91,10 +92,9 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/favicon-16x16.png',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
-  manifest: '/site.webmanifest',
   alternates: {
     canonical: 'https://arcanetflix.pavloh.com',
   },

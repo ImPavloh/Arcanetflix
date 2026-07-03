@@ -52,7 +52,7 @@ export default function ArcanePage() {
         <HeroSection />
       </section>
 
-      <main className="relative z-10 container mx-auto px-4 py-8">
+      <div className="relative z-10 container mx-auto px-4 py-8">
         <MusicPlayer
           url="https://open.spotify.com/playlist/37i9dQZF1DX3KVUsNUmJc2"
           isMediaPlaying={isMediaPlaying}
@@ -81,7 +81,7 @@ export default function ArcanePage() {
             <ImageGallery onImageViewChange={handleMediaPlayingChange} />
           </Suspense>
         </section>
-      </main>
+      </div>
     </div>
   )
 }
